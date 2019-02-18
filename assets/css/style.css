@@ -45,6 +45,7 @@ a, a:visited {
 .indexSection {
     position: absolute;
     background-color: #ffffff;
+    border: 1px solid #dddddd;
     width: 960px;
     height: 400px;
     top: 20%;
@@ -53,6 +54,7 @@ a, a:visited {
 .indexSection1 {
     position: absolute;
     background-color: #ffffff;
+    border: 1px solid #dddddd;
     width: 960px;
     height: 500px;
     top: 13%;
@@ -128,6 +130,7 @@ a, a:visited {
     background-color: #4aaaa5;
     color: #ffffff;
     font-size: 15px;
+    border-radius: 5px;
 }
 .submit:hover {
     background-color: #2f6a67;
@@ -184,7 +187,9 @@ a, a:visited {
     width: 600px;
     z-index: 5;
     opacity: 1;
-    position: relative;
+    position: fixed;
+    top: 100px;
+    right: 200px;
 }
 .closeImage {
     color: #777777;
@@ -194,9 +199,9 @@ a, a:visited {
     display: inline-block;
     width: 80px;
     padding: 8px;
-    position: relative;
-    top: -154px;
-    right: 80px;
+    position: fixed;
+    top: 152px;
+    right: 200px;
     z-index: 10;
     background-color: lightgray;
 }
@@ -266,15 +271,35 @@ a, a:visited {
           margin-left: 2px;
       }
       .fullImage {
-          position: relative;
+          position: absolute;
           top: -500px;
       }
-      /*.closeImage {
-          top: -23.6%; 
-      }*/
       .image1 {
         height: auto;
         max-width: 100%;
       }
+    .closeImage {
+        right: 200px;
+    }
   }
+  @media screen and (max-width: 768px)  {
+    .image1 {
+        height: auto;
+        max-width: 100%;
+        right: 70px;
+    }
+    .closeImage {
+        right: 70px;
+    }
+}
+@media screen and (max-width: 640px)  {
+    .image1 {
+        height: auto;
+        max-width: 100%;
+        right: 0px;
+    }
+    .closeImage {
+        right: 0px;
+    }
+}
   /* END - Media Queries */
