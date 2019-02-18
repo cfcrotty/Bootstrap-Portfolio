@@ -33,10 +33,10 @@ footer {
     border-top: 8px solid #4aaaa5;
     position: fixed;
     width: 100%;
-    height: 10%;
     margin: auto;
     text-align: center;
     bottom: 0;
+    color: rgb(231, 226, 226);
 }
 a, a:visited {
     text-decoration: none;
@@ -49,7 +49,7 @@ a, a:visited {
     width: 960px;
     height: 400px;
     top: 20%;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 .indexSection1 {
     position: absolute;
@@ -249,6 +249,11 @@ a, a:visited {
 /* END - Changes to Bootstrap CSS */
 
 /* START - Media Queries */
+@media screen and (min-width: 992px) {
+    .show {
+        float: right;
+    }
+}
 @media screen and (max-width: 991px) {
     .container {
       width: 100%;
@@ -264,27 +269,27 @@ a, a:visited {
         margin: auto;
         margin-bottom: 100px;
         top: 0;
-      }
-      .navbar {
+    }
+    .navbar {
         height: 100%;
         z-index: 15;
-      }
-      .pad {
-          margin-left: 2px;
-      }
-      .fullImage {
-          position: absolute;
-          top: -500px;
-      }
-      .image1 {
+    }
+    .pad {
+        margin-left: 2px;
+    }
+    .fullImage {
+        position: absolute;
+        top: -500px;
+    }
+    .image1 {
         height: auto;
         max-width: 100%;
-      }
+    }
     .closeImage {
         right: 200px;
     }
-  }
-  @media screen and (max-width: 768px)  {
+}
+@media screen and (max-width: 768px)  {
     .image1 {
         height: auto;
         max-width: 100%;
