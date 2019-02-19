@@ -244,6 +244,7 @@ a, a:visited {
 }
 .navbar-toggler {
     float: right;
+    margin: 10px 5px 0 0;
 }
 .navbar {
     position: relative;
