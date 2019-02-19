@@ -28,14 +28,15 @@ h2 {
     text-align: left;
     margin-left: 30px;
 }
-footer {
+footer {/**/
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     margin: auto;
+    padding-bottom: 10px;
     text-align: center;
-    bottom: 0;
+    /*bottom: 0;*/
     color: rgb(231, 226, 226);
 }
 a, a:visited {
@@ -43,7 +44,7 @@ a, a:visited {
     color: #777777;
 }
 .indexSection {
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     width: 960px;
@@ -52,7 +53,7 @@ a, a:visited {
     /*overflow: auto;*/
 }
 .indexSection1 {
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     width: 960px;
@@ -64,6 +65,8 @@ a, a:visited {
     width: 960px;
     margin: auto;
     height: 100%;
+    margin-top: 5%;
+    min-height: calc(100vh - 78px);
 }
 .header {
     width: 960px;
@@ -249,6 +252,18 @@ a, a:visited {
 /* END - Changes to Bootstrap CSS */
 
 /* START - Media Queries */
+@media screen and (min-width: 1050px) {
+    .show {
+        float: right;
+    }
+    .image1 {
+        right: 300px;
+    }
+    .closeImage {
+        top: 165px;
+        right: 300px;
+    }
+}
 @media screen and (min-width: 992px) {
     .show {
         float: right;
